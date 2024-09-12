@@ -23,7 +23,7 @@ const Contact = () => {
     emailjs
       .send(
         'service_sadln2d',
-        'aman.whistlingwoods.net@gmail.com',
+        'template_1gd6vnk',
         {
           from_name: form.name,
           to_name: 'Team Logic',
