@@ -22,7 +22,7 @@ const Contact = () => {
 
     emailjs
       .send(
-        'aman.whistlingwoods.net@gmail.com',
+        'service_sadln2d',
         'aman.whistlingwoods.net@gmail.com',
         {
           from_name: form.name,
