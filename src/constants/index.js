@@ -264,7 +264,7 @@ export const workExperiences = [
     pos: 'Front & Back End Developerr',
     duration: '2022 - Present',
     title: "As a Front and Back End Developer, I design and maintain websites and web applications, focusing on database management, server-side scripting, and optimizing performance.",
-    icon: '/assets/framer.svg',
+    icon: '/assets/wwi-site-info-logo.png',
     animation: 'victory',
   },
 ];
