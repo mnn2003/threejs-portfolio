@@ -17,8 +17,8 @@ const WorkExperience = () => {
         <div className="work-container">
           <div className="work-canvas">
             <Canvas>
-              <ambientLight intensity={7} />
-              <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+              <ambientLight intensity={1.5} />
+              <spotLight position={[10, 10, 10]} angle={0.2} penumbra={1} intensity={2} />
               <directionalLight position={[10, 10, 10]} intensity={1} />
               <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
 
@@ -39,18 +39,20 @@ const WorkExperience = () => {
                   className="work-content_container group">
                   <div className="flex flex-col h-full justify-start items-center py-2">
                     <div className="work-content_logo">
-                      <img className="w-full h-full" src={item.icon} alt="" />
+                      <img className="w-full h-full" src={item.icon} alt={item.name} />
                     </div>
 
                     <div className="work-content_bar" />
                   </div>
 
                   <div className="sm:p-5 px-2.5 py-5">
-                    <p className="font-bold text-white-800">{item.name}</p>
-                    <p className="text-sm mb-5">
-                      {item.pos} -- <span>{item.duration}</span>
+                    <p className="font-bold text-white-800 text-lg">{item.name}</p>
+                    <p className="text-sm mb-5 text-gray-400">
+                      {item.pos} &mdash; <span>{item.duration}</span>
                     </p>
-                    <p className="group-hover:text-white transition-all ease-in-out duration-500">{item.title}</p>
+                    <p className="group-hover:text-white transition-all ease-in-out duration-500 text-gray-300">
+                      {item.title}
+                    </p>
                   </div>
                 </div>
               ))}
